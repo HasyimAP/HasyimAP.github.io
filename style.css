@@ -98,8 +98,9 @@ p.header {
 }
 
 .container .card .face.face2 .content p{
-    margin: 0;
+    margin: 0.7em;
     padding: 0;
+    text-align: center;
 }
 
 @media(max-width: 700px){
