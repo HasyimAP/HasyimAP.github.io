@@ -43,7 +43,7 @@ p.header {
 }
 
 .container .card .face{
-    width: 30vw;
+    width: 40vw;
     height: 200px;
     transition: 0.5s;
 }
@@ -101,6 +101,21 @@ p.header {
     margin: 0.7em;
     padding: 0;
     text-align: center;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(40, 39, 39);
+    padding: 5px;
+    border: 3px solid rgb(40, 39, 39);
+}
+
+.container .card .face.face2 .content a:hover {
+    background: rgb(40, 39, 39);
+    color: #fff;
 }
 
 @media(max-width: 700px){
