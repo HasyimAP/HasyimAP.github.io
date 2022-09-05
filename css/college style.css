@@ -36,7 +36,7 @@ h3.header {
     width: 40vw;
     height: 40vw;
     perspective: 1000px;
-    position: absolute;
+    position: relative;
     left: 50%;
     right: 50%;
     margin-left: -20vw;
@@ -65,7 +65,7 @@ h3.header {
 }
 
 .front-card {
-    background-color: #bbb;
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 
