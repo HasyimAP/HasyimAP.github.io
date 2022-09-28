@@ -74,7 +74,7 @@ p {
 }
 
 .about-me a {
-    padding-bottom: 40px;
+    padding-bottom: 5vh;
 }
 
 .social-pict {
@@ -100,3 +100,28 @@ p {
     background-color: white;
 }
 
+@media screen and (max-width: 800px) {
+    .about-me p {
+        font-size: 5vw;
+    }
+    
+    .social-pict {
+        width: 15vw;
+    }
+
+    .github {
+        margin-left: 10vw;
+    }
+
+    .kaggle {
+        margin-left: 5vw;
+    }
+
+    .linkedin {
+        margin-left: 5vw;
+    }
+
+    .saweria {
+        margin-left: 5vw;
+    }
+}
