@@ -2,3 +2,101 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    width: 100vw;
+    height: auto;
+    background-image: url(../images/whoami\ bg\ 3.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+}
+
+.back {
+    font-family: audiowide;
+    color: black;
+    padding: 5px;
+    margin: auto;
+    font-size: 2.5vh;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.whoami {
+    font-family: audiowide;
+    font-size: 7vw;
+    text-align: center;
+    padding-bottom: 10px;
+    cursor: default;
+}
+
+.whoami-section img {
+    max-width: 100%;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 2px 2px 20px;
+}
+
+.my-pict {
+    width: 13vw;
+    display: inline;
+    margin: auto;
+    position: relative;
+    left: 45vw;
+}
+
+@media screen and (max-width: 800px) {
+    .my-pict {
+        width: 30vw;
+        left: 35vw;
+    }    
+}
+
+.about-me p {
+    font-family: Silkscreen;
+    font-size: 2vw;
+    color: white;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(53, 47, 216);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+}
+
+.about-me a {
+    padding-bottom: 40px;
+}
+
+.social-pict {
+    width: 6vw;
+    justify-content: center;
+    margin: auto;
+}
+
+.github {
+    margin-left: 25vw;
+}
+
+.kaggle {
+    margin-left: 10vw;
+}
+
+.linkedin {
+    margin-left: 10vw;
+}
+
+.saweria {
+    margin-left: 10vw;
+    background-color: white;
+}
+
