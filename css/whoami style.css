@@ -1,127 +1,184 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: auto;
-    background-image: url(../images/whoami\ bg\ 3.jpg);
-    background-size: cover;
-    background-repeat: repeat-y;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
     overflow-x: hidden;
 }
 
-.back {
-    font-family: audiowide;
-    color: black;
-    padding: 5px;
-    margin: auto;
-    font-size: 2.5vh;
-    position: relative;
-    text-align: center;
-    display: inline-block;
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.whoami {
-    font-family: audiowide;
-    font-size: 7vw;
-    text-align: center;
-    padding-bottom: 10px;
-    cursor: default;
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
-.whoami-section img {
-    max-width: 100%;
+.back-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-4px);
+}
+
+.profile-section {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    display: inline-block;
-    overflow: hidden;
-    box-shadow: 2px 2px 20px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.my-pict {
-    width: 13vw;
-    display: inline;
-    margin: auto;
-    position: relative;
-    left: 45vw;
+.profile-picture:hover {
+    transform: scale(1.05);
 }
 
-@media screen and (max-width: 800px) {
-    .my-pict {
-        width: 30vw;
-        left: 35vw;
-    }    
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 2rem;
+    letter-spacing: -0.5px;
 }
 
-.about-me p {
-    font-family: Silkscreen;
-    font-size: 2vw;
-    color: white;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    text-align: center;
-    border-radius: 5px;
-    background-color: rgb(53, 47, 216);
+.bio {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 1em;
-    margin-inline-end: 1em;
+.bio-item {
+    font-size: 1.05rem;
+    color: #4a5568;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    background: #f7fafc;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+    line-height: 1.6;
 }
 
-.about-me a {
-    padding-bottom: 5vh;
+.bio-item:hover {
+    background: #edf2f7;
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
 }
 
-.social-pict {
-    width: 6vw;
+.social-links {
+    display: flex;
     justify-content: center;
-    margin: auto;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
-.github {
-    margin-left: 25vw;
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: #f7fafc;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.kaggle {
-    margin-left: 10vw;
+.social-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background: #fff;
 }
 
-.linkedin {
-    margin-left: 10vw;
+.social-link img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
-.saweria {
-    margin-left: 10vw;
-    background-color: white;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .profile-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .profile-picture {
+        width: 140px;
+        height: 140px;
+    }
+
+    .bio-item {
+        font-size: 0.95rem;
+        padding: 0.65rem 0.85rem;
+    }
+
+    .social-link {
+        width: 48px;
+        height: 48px;
+    }
+
+    .social-link img {
+        width: 28px;
+        height: 28px;
+    }
 }
 
-@media screen and (max-width: 800px) {
-    .about-me p {
-        font-size: 5vw;
-    }
-    
-    .social-pict {
-        width: 15vw;
+@media screen and (max-width: 480px) {
+    .name {
+        font-size: 1.75rem;
     }
 
-    .github {
-        margin-left: 10vw;
+    .profile-picture {
+        width: 120px;
+        height: 120px;
     }
 
-    .kaggle {
-        margin-left: 5vw;
+    .bio-item {
+        font-size: 0.9rem;
     }
 
-    .linkedin {
-        margin-left: 5vw;
-    }
-
-    .saweria {
-        margin-left: 5vw;
+    .social-links {
+        gap: 1rem;
     }
 }
