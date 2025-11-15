@@ -1,0 +1,7 @@
+# robots.txt for HasyimAP.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hasyimap.github.io/sitemap.xml
